@@ -13,7 +13,7 @@ a{
     text-decoration: none;
 }
 section{
-    background-color:lightgray;
+    background-color: rgb(238, 238, 238);
 }
 #landing-page{
     min-height: 100vh;
@@ -26,6 +26,7 @@ section{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,10 +63,11 @@ section{
     LANDING PAGE BODY 
 */
 .landing-page_body{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 100px - 70px);
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,47 +89,42 @@ section{
 }
 .socail__links{
     display: flex;
-    gap: 12px;
+    gap: 16px;
     margin-top: 20px;
 }
-
-.socail__links .button{
+.social__link{
+  background-color: #FB8122;
+  color: white;  
+  padding: 6px;
+  font-size: 16px;
+  border-radius: 50%;
+  transition: all 300ms ease;
+}
+.click:hover{
+    transform: scale(1.1);
+}
+.click:active{
+    transform: scale(0.8);
+}
+.mail{
     display: flex;
-    flex-direction: column;
-    height: 60px;
-    width: 60px;
-    overflow: hidden;
-    align-items: left;
-    margin: 0 5px;
-    background-color: #FB8122;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
+    justify-content: flex-end;
+    width: 100%;
+    height: 70px;
+    max-width: 1200px;
+    padding: 0 20px;
+    margin: 0 auto;
 }
-.socail__links .button .icon{
-   height: 60px;
-   width: 60px;
-   border-radius: 50px;
-   text-align: center;
-   border: 50px;
-   box-sizing: border-box;
-   transition: all 0.3s ease-out;
+.mail__container{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
 }
-.socail__links .button .icon i{
-    font-size: 25px;
-    line-height: 60px;
-    color: black;
-    font-weight: 700;
-}
-.socail__links .button span{
+.mail__link{
     font-size: 20px;
-    font-weight: 400;
-    line-height: 60px;
-    margin-left: 10px;
     color: white;
-}
-.socail__links .button:hover{
-    flex-direction: row;
-    width: 200px;
-    transition: all 0.3s ease-out;
 }
