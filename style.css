@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+section{
+    background-color:lightgray;
+}
+#landing-page{
+    min-height: 100vh;
+}
+/* 
+    NAVIGATION 
+*/
+.nav-bar{
+    height: 100px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo{
+    width: 70px;
+    height: 70px;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+}
+.nav__links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.nav__link--anchor{
+    font-size: 16px;
+    color: #242424;
+}
+
+/* 
+    NAV LINK HOVER 
+*/
+.nav__link--hover:hover{
+    color: #FB8122;
+    border-bottom:1px solid black ;
+    transition: all 300ms ease;
+}
+
+/* 
+    LANDING PAGE BODY 
+*/
+.landing-page_body{
+    height: calc(100vh - 100px);
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title{
+    font-size: 4em;
+    font-weight:700;
+    line-height: 1.5;
+}
+.header__info{
+    font-size: 1.3em;
+    line-height: 1.6;
+    width: 100%;
+    max-width: 500px;
+}
+.blue{
+    color:#FB8122;
+    font-weight: 700;
+}
+.socail__links{
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.socail__links .button{
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    align-items: left;
+    margin: 0 5px;
+    background-color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+.socail__links .button .icon{
+   height: 60px;
+   width: 60px;
+   border-radius: 50px;
+   text-align: center;
+   border: 50px;
+   box-sizing: border-box;
+   transition: all 0.3s ease-out;
+}
+.socail__links .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    color: #FB8122;
+}
+.socail__links .button span{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-left: 10px;
+    color: white;
+}
+.socail__links .button:hover{
+    flex-direction: row;
+    width: 200px;
+}
