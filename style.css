@@ -99,7 +99,7 @@ section{
     overflow: hidden;
     align-items: left;
     margin: 0 5px;
-    background-color: black;
+    background-color: #FB8122;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -116,7 +116,8 @@ section{
 .socail__links .button .icon i{
     font-size: 25px;
     line-height: 60px;
-    color: #FB8122;
+    color: black;
+    font-weight: 700;
 }
 .socail__links .button span{
     font-size: 20px;
@@ -128,4 +129,5 @@ section{
 .socail__links .button:hover{
     flex-direction: row;
     width: 200px;
+    transition: all 0.3s ease-out;
 }
