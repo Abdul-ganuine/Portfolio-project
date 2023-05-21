@@ -18,6 +18,11 @@ section{
 #landing-page{
     min-height: 100vh;
 }
+.row{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
 /* 
     NAVIGATION 
 */
@@ -62,8 +67,9 @@ section{
 /* 
     LANDING PAGE BODY 
 */
+
 .landing-page_body{
-    height: calc(100vh - 100px - 70px);
+    height: calc(100vh - 100px - 55px );
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
@@ -92,13 +98,18 @@ section{
     gap: 16px;
     margin-top: 20px;
 }
-.social__link{
+.social__links--link{
   background-color: #FB8122;
-  color: white;  
+  color: white;
+  height: 40px;
+  width: 40px;  
   padding: 6px;
   font-size: 16px;
   border-radius: 50%;
   transition: all 300ms ease;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .click:hover{
     transform: scale(1.1);
@@ -110,7 +121,7 @@ section{
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    height: 70px;
+    height: 50px;
     max-width: 1200px;
     padding: 0 20px;
     margin: 0 auto;
@@ -128,3 +139,7 @@ section{
     font-size: 20px;
     color: white;
 }
+
+/* 
+    PROJECT sECTION
+*/
